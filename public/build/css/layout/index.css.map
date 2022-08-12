@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/_principal.scss","layout/index.css"],"names":[],"mappings":"AAAA,KACI,oBCCJ","file":"index.css","sourcesContent":["html{\r\n    background-color: red;\r\n}","html {\n  background-color: red;\n}"]}
