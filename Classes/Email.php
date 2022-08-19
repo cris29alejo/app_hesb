@@ -29,13 +29,13 @@ class Email{
         $mail->Password = 'ababea574113f2';
 
         $mail->setFrom('cris29alejo@gmail.com');
-        $mail->addAddress('cris29alejo@gmail.com', 'HESB.com');
+        $mail->addAddress($this->email, 'HESB.com');
         $mail->Subjetct = 'Confirma tu cuenta';
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
 
         $contenido = "<html>";
-        $contenido .= "<p><strong>Hola ".$this->nombre . "</strong>, has creado tu cuenta en APP HEBS, solo debes cofirmarla presionando el siguiente enlace</p>";
+        $contenido .= "<p><strong>Hola ".$this->nombre . "</strong>, has creado tu cuenta en APP Hospital de Especialidades San Bartolo, solo debes cofirmarla presionando el siguiente enlace</p>";
         $contenido .= "Presionando aquí: <a href='http://localhost:3000/confirmar-cuenta?token=" . $this->token . "'>Confimar Cuenta</a></p>";
         $contenido .="<p>Si tu no solicitaste esta cuenta, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
@@ -52,11 +52,11 @@ class Email{
         $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
-        $mail->Username = 'b2a4ca91a91eb5';
-        $mail->Password = 'f615ad15494058';
+        $mail->Username = '705570a437eb0b';
+        $mail->Password = 'ababea574113f2';
 
-        $mail->setFrom('mateozzz123@gmail.com');
-        $mail->addAddress('mateozzz123@gmail.com', 'Appsalon.com');
+        $mail->setFrom('cris29alejo@gmail.com');
+        $mail->addAddress($this->email, 'HESB.com');
         $mail->Subjetct = 'Restablecer tu Contraseña';
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
