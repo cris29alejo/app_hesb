@@ -26,11 +26,12 @@ class Email{
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
         $mail->Username = 'a0f641eddc0d16';
+        $mail->SMTPSecure = 'tls';
         $mail->Password = 'c6bdb7733c6ba9';
 
         $mail->setFrom('cris29alejo@gmail.com');
         $mail->addAddress($this->email, 'https://murmuring-sea-87576.herokuapp.com');
-        $mail->Subjetct = 'Confirma tu cuenta';
+        $mail->Subject = 'Confirma tu cuenta';
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
 
@@ -57,7 +58,7 @@ class Email{
 
         $mail->setFrom('cris29alejo@gmail.com');
         $mail->addAddress($this->email, 'https://murmuring-sea-87576.herokuapp.com');
-        $mail->Subjetct = 'Restablecer tu Contraseña';
+        $mail->Subject = 'Restablecer tu Contraseña';
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
 
