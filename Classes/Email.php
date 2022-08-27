@@ -29,7 +29,7 @@ class Email{
         $mail->Password = 'ababea574113f2';
 
         $mail->setFrom('cris29alejo@gmail.com');
-        $mail->addAddress($this->email, 'HESB.com');
+        $mail->addAddress($this->email, 'https://murmuring-sea-87576.herokuapp.com');
         $mail->Subjetct = 'Confirma tu cuenta';
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
@@ -56,7 +56,7 @@ class Email{
         $mail->Password = 'ababea574113f2';
 
         $mail->setFrom('cris29alejo@gmail.com');
-        $mail->addAddress($this->email, 'HESB.com');
+        $mail->addAddress($this->email, 'https://murmuring-sea-87576.herokuapp.com');
         $mail->Subjetct = 'Restablecer tu Contraseña';
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
