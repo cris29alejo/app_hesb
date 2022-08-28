@@ -26,7 +26,6 @@ class Email{
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
         $mail->Username = 'a0f641eddc0d16';
-        $mail->SMTPSecure = 'tls';
         $mail->Password = 'c6bdb7733c6ba9';
 
         $mail->setFrom('cris29alejo@gmail.com');
@@ -47,14 +46,13 @@ class Email{
     }
     public function enviarInstrucciones(){
         //Crear el objeto de Email
-
-        $mail = new PHPMailer(true);
+        $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
-        $mail->Username = '705570a437eb0b';
-        $mail->Password = 'ababea574113f2';
+        $mail->Username = 'a0f641eddc0d16';
+        $mail->Password = 'c6bdb7733c6ba9';
 
         $mail->setFrom('cris29alejo@gmail.com');
         $mail->addAddress($this->email, 'https://murmuring-sea-87576.herokuapp.com');
