@@ -37,7 +37,7 @@ class Email{
 
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola ".$this->nombre . "</strong>, has creado tu cuenta en APP Hospital de Especialidades San Bartolo, solo debes cofirmarla presionando el siguiente enlace</p>";
-        $contenido .= "Presionando aquí: <a href='http://localhost:3000/confirmar-cuenta?token=" . $this->token . "'>Confimar Cuenta</a></p>";
+        $contenido .= "Presionando aquí: <a href='https://murmuring-sea-87576.herokuapp.com/confirmar-cuenta?token=" . $this->token . "'>Confimar Cuenta</a></p>";
         $contenido .="<p>Si tu no solicitaste esta cuenta, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
 
@@ -64,7 +64,7 @@ class Email{
 
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola ".$this->nombre . "</strong>, has solicitado restablecer tu contraseña,sigue el sigueinte enlace</p>";
-        $contenido .= "Presionando aquí: <a href='http://localhost:3000/recuperar?token=" . $this->token . "'>Restablecer Contraseña</a></p>";
+        $contenido .= "Presionando aquí: <a href='https://murmuring-sea-87576.herokuapp.com/recuperar?token=" . $this->token . "'>Restablecer Contraseña</a></p>";
         $contenido .="<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
 
