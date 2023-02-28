@@ -5,9 +5,9 @@
     <?php include_once __DIR__ . '/../templates/alertas.php';?>
     <form class="formulario" method="POST">
         <div class="campo">
-            <label for="idpacientes">Pasciente</label>
+            <label for="idpacientes">Paciente</label>
             <select name="idpacientes" id="idpacientes">
-                <option disabled selected>--Selecciona el pasciente--</option>
+                <option disabled selected>--Selecciona el paciente--</option>
                 <?php foreach($pacientes as $paciente):?>
                 <option value="<?php echo $paciente->id?>" <?php if($cita->idpacientes == $paciente->id) echo 'selected';?>><?php echo $paciente->nombre . " ". $paciente->apellido?></option>
                 <?php endforeach;?>

@@ -14,6 +14,7 @@
             </div>
         </form>
     </div>
+    <?php if(!empty($citas)) :?>
     <div class="navegacion-nuevo">
         <table>
            <thead>
@@ -45,6 +46,9 @@
                 <?php endforeach;?>
            </tbody>
         </table>
+        <?php else: ?>
+            <p>--No hay citas para esta fecha--</p>
+        <?php endif;?>
     </div>
     <div class="app">
         <?php if($suma != 0): ?>
